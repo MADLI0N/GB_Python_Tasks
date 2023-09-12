@@ -14,7 +14,7 @@ for i in range(n):
     x = int(input("Введите 0 если решка или 1 если орел: "))
     if x == 0:
         count +=1    
-if count == n / 2 or n < 2:
+if count == n / 2 or n < 3:
     print("Нет минимального числа монет, которые нужно перевернуть")
 elif count < n - count:
     print(count)
