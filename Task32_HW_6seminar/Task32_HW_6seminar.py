@@ -11,3 +11,8 @@ list_n = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 min = int(input("Введите минимальное число массива: ")) 
 max = int(input("Введите максимальное число массива: "))
 print([i for i in range(len(list_n)) if min <= list_n[i] <= max])
+
+# Решение с функцией высшего порядка
+new_list = [int(i) for i in input("Введите значения списка: ").split(",")]
+min_number, max_number = map(int, input("Введите минимальное и максимальныое значение диапазона: ").split())
+print(*[i for i in range(len(new_list)) if min_number <= new_list[i] <= max_number])
